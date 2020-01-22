@@ -1,5 +1,4 @@
 var mysql = require('mysql');
-
 var con = mysql.createConnection({
     host:'localhost',
     user: 'Anton',
@@ -20,6 +19,7 @@ con.connect(function(err){
         "PRIMARY KEY(id)" + ")", 
         function(err, result){
              if (err) throw err;
+             console.log(result);
         });
     });
 
