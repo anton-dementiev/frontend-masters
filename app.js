@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const port = 3000;
 
-var db = require('./data/mysql');
+require('./data/mysql');
 
 
 app.get('/', (req, res) => {
